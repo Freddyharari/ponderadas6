@@ -1,5 +1,5 @@
 
-# Análise de Bibliotecas de Hash (SHA-256) e AES-256 em Python
+# Análise de Bibliotecas de AES-256 e  Hash (SHA-256) em Python
 
 ## Método Utilizado
 
@@ -16,9 +16,9 @@ Devido às características da criptografia AES, o resultado da encriptação é
 | Entrada                                    | Texto Descriptografado                          |
 |--------------------------------------------|-------------------------------------------------|
 | texto simples                              | texto simples                                   |
-| 123456789                                  | 123456789                                       |
-| A quick brown fox jumps over the lazy dog | A quick brown fox jumps over the lazy dog       |
 | @#$%&*()_+=-\`~                            | @#$%&*()_+=-\`~                                 |
+| A quick brown fox jumps over the lazy dog  | A quick brown fox jumps over the lazy dog       |
+| 123456789                                  | 123456789                                       |
 | texto simples (com espaço no final)        | texto simples                                   |
 
 
@@ -27,9 +27,9 @@ Devido às características da criptografia AES, o resultado da encriptação é
 | Entrada                                    | Hash SHA-256                                                               |
 |--------------------------------------------|----------------------------------------------------------------------------|
 | texto simples                              | `a7bdbfb84f5369243bd0e7494947db69216ed9161d39f2522214b866bd5e1d95` |
-| 123456789                                  | `15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225` |
-| A quick brown fox jumps over the lazy dog | `afd63d45baadf7eaf2e9b861054f7b435ae5200d46bf4e145468dc38d1e110d7` |
 | @#$%&*()_+=-\`~                            | `c5f19e10d4812336b8f2569a69a13d5681739385595fb5a8b1309fdd5418a35f` |
+| A quick brown fox jumps over the lazy dog  | `afd63d45baadf7eaf2e9b861054f7b435ae5200d46bf4e145468dc38d1e110d7` |
+| 123456789                                  | `15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225` |
 | texto simples (com espaço no final)        | `e457845ed1be331a523d60b2c08afacfa1cb99b20195f0b908a673483d552c82` |
 
 ## Comparação entre AES-256 e SHA-256
